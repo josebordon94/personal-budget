@@ -23,7 +23,7 @@ Luego debe dirigirse a dos archivos de configuración:
   Debe colocarse en cero si el backend no coexiste de forma local con la aplicación React.
 
 
-## Usos
+## Uso
 
 Al iniciar la aplicación, se encontrará directamente con el login. Si es la primera vez en utilizarla, puede crear un usuario utilizando el enlace que se encuentra después del formulario.
 Una vez ingresado, podrá acceder a las funciones de presupuesto personal. La verificación de usuario se realiza mediante JSON Web Token (JWT).
