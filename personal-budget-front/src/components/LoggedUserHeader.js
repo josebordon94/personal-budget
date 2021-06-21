@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hidden, makeStyles } from '@material-ui/core'
+import { Hidden } from '@material-ui/core'
 import Navbar from './Navbar'
 import Drawer from './Drawer'
 

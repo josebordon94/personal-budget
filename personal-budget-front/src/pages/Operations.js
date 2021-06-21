@@ -67,27 +67,27 @@ const Operations = () => {
   const reFetch = () => {
     setReload(!reload)
   }
-  const getOperations = async () => {
-    let config = {
-      headers: {
-        'x-access-token': jwt,
-      },
+
+  useEffect(() => {
+    const getOperations = async () => {
+      let config = {
+        headers: {
+          'x-access-token': jwt,
+        },
+      }
+      const res = await axios.get(
+        apirest.apiUrl + '/operations/' + user_id,
+        config,
+      )
+      await new Promise((resolve) =>
+        setTimeout(resolve, apirest.simulationRequestDelay),
+      )
+      setOps(res.data)
+      setLoading(false)
     }
-    const res = await axios.get(
-      apirest.apiUrl + '/operations/' + user_id,
-      config,
-    )
-    await new Promise((resolve) =>
-      setTimeout(resolve, apirest.simulationRequestDelay),
-    )
-    setOps(res.data)
-    setLoading(false)
-  }
-  useEffect(async () => {
     setLoading(true)
     getOperations()
-    renderTable()
-  }, [reload])
+  }, [reload, jwt, user_id])
 
   const renderTable = () => {
     if (loading) {

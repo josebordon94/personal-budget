@@ -33,8 +33,8 @@ function createData(id, concept, mount, type, date) {
 
 export default function LastOperations() {
   const [rows, setRows] = useState([])
-  const jwt = localStorage.getItem('jwt')
   useEffect(() => {
+    const jwt = localStorage.getItem('jwt')
     const user_id = localStorage.getItem('user_id')
     const getData = async function () {
       let newRows = []
@@ -69,7 +69,7 @@ export default function LastOperations() {
     <TableContainer component={Paper}>
       <Table className={classes.table} size="medium" aria-label="a dense table">
         {rows.length > 0 ? (
-          ''
+          <caption></caption>
         ) : (
           <caption>No hay registros para mostrar.</caption>
         )}

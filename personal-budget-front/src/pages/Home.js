@@ -51,7 +51,7 @@ const Home = () => {
       <LoggedUserHeader />
       <div className={classes.content}>
         <div className={classes.toolbar}></div>
-        <Grid container spacing={0} xs={12}>
+        <Grid container spacing={0}>
           <Grid item xs={12}>
             <Paper className={classes.paper}>
               <Typography

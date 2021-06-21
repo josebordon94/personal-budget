@@ -16,8 +16,8 @@ const useStyles = makeStyles((theme) => ({
 const Balance = () => {
   const classes = useStyles()
   const [mount, setMount] = useState()
-  const jwt = localStorage.getItem('jwt')
   useEffect(() => {
+    const jwt = localStorage.getItem('jwt')
     let config = {
       headers: {
         'x-access-token': jwt,

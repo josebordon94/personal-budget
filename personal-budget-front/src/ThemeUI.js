@@ -21,14 +21,12 @@ const theme = createMuiTheme({
     },
     h1: {
       fontSize: '2rem',
-      marginBottom: '0.3rem',
       textAlign: 'left',
       color: 'black',
       marginBottom: '0.2em',
     },
     h2: {
       fontSize: '1.5rem',
-      marginBottom: '0.3rem',
       textAlign: 'left',
       color: 'black',
       marginTop: '0.5em',
@@ -36,7 +34,6 @@ const theme = createMuiTheme({
     },
     h3: {
       fontSize: '1.2rem',
-      marginBottom: '0.3rem',
       textAlign: 'left',
       color: 'black',
       marginTop: '0.5em',

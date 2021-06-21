@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import { useForm, Controller } from 'react-hook-form'
 import NavbarUnregistered from '../components/NavbarUnregistered'
-import { Link, Redirect, useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import UILink from '@material-ui/core/Link'
 import apirest from '../services/apirest'
 import axios from 'axios'
@@ -111,7 +111,7 @@ const SignUp = ({ handleClose }) => {
             )}
             rules={{
               required: 'Este campo es obligatorio.',
-              pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+              pattern: /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/,
             }}
           />
           <Controller

@@ -2,8 +2,6 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Paper, Grid, Typography } from '@material-ui/core/'
 import LoggedUserHeader from '../components/LoggedUserHeader'
-import LabelImportantIcon from '@material-ui/icons/LabelImportant'
-import AccountBalanceIcon from '@material-ui/icons/AccountBalance'
 
 const useStyles = makeStyles((theme) => ({
   root: {
